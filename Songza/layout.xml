@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout onlaunch="launch" onvolumeup="volume_up" onvolumedown="volume_down">
+  <grid>
+    <row weight="wrap">
+      <label id="info" text="[Not Playing]" />
+    </row>
+    <row>
+      <button icon="vdown" ontap="volume_down" />
+      <button icon="vmute" ontap="volume_mute" />
+      <button icon="vup" ontap="volume_up" />
+    </row>
+    <row>
+      <button icon="thumbsup" onTap="like" />
+      <button icon="thumbsdown" onTap="dislike" />
+    </row>
+    <row>
+      <button icon="playpause" ontap="play_pause" />
+    </row>
+  </grid>
+</layout>
