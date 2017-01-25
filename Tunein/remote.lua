@@ -2,6 +2,10 @@ local keyboard = libs.keyboard;
 local streamkeys = libs.streamkeys;
 include("../streamkeys.lua");
 
+events.detect = function ()
+	return detect();
+end
+
 events.focus = function ()
 	init("tunein", true);
 end

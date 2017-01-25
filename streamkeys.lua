@@ -11,6 +11,9 @@ local title = "";
 local playing = false;
 
 
+function detect()
+	return streamkeys.status();
+end
 
 function showInfo()
 	server.update({
